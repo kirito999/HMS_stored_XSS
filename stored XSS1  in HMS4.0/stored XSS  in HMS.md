@@ -25,13 +25,13 @@ $sql=mysqli_query($con,"update tblpatient set PatientName='$patname',PatientCont
 ```
 
 #### Demonstration
-Spet1. Login Doctor
+Step1 Login Doctor
 
-in http://localhost/hospital/hms/doctor/edit-patient.php?editid=2 with 'Patient Address'(1) and 'Medical History'(2), value include PAYLOAD(>\<script>alert(XSS1)\</script>), and submit request, look likes:
+in http://localhost/hospital/hms/doctor/edit-patient.php?editid=2 with 'Patient Address'(1) and 'Medical History'(2), value include PAYLOAD(>\<script>alert(1)\</script>), and submit request, look likes:
 
 ![alt text](image-2.png)
 
-Spet2.1 Login Patient
+Step2.1 Login Patient
 
 Go to http://localhost/hospital/hms/view-medhistory.php?viewid=2 can trigger XSS1 and XSS2.
 
