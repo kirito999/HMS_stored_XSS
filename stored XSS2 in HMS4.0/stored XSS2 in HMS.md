@@ -35,7 +35,7 @@ in http://localhost/hospital/hms/edit-profile.php with 'Address', value include 
 
 ![alt text](image.png)
 
-Step2.2 Login Admin
+Step2 Login Admin
 
 Go to http://localhost/hospital/hms/admin/manage-users.php can trigger XSS vul.
 
